@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: black;
+}
+
+.mainContainer{
+    max-width: 550px;
+    padding: 10px;
+}
+
+.mainContainer img{
+    max-width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.mainContainer h1{
+    color: white;
+    font-weight: 500;
+}
+
+.mainContainer p{
+    color: white;
+    margin: 15px 0;
+}
+
+.mainContainer button{
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgb(255, 251, 251), 0.2;
+    cursor: pointer;
+}
+
+.mainContainer button:hover{
+    background-color: orange;
+    /* color: white; */
+}
+
+
+.trailerContainer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; 
+}
+.trailerContainer video{
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+@media (max-width: 991px) {
+    .trailerContainer video{
+        max-width: 90%;
+    }
+}
+
+.active.trailerContainer{
+    visibility: hidden;
+}
+
+.closeIcon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
+    cursor: pointer;
+    
+    
+}
